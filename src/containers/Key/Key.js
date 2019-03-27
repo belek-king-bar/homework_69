@@ -18,7 +18,6 @@ class Key extends Component {
 
 
 const mapStateToProps = state => {
-    console.log(state);
     return {
         check: state.check,
         success: state.success
