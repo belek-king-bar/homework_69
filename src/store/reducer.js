@@ -9,7 +9,7 @@ let password = "1234";
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'NUMBER':
-            return {...state, check: state.check + action.value};
+            return {...state, check: (state.check + action.value).substring(0, 4)};
 
         case 'SPLICE':
             return {...state,
