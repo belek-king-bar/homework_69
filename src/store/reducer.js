@@ -1,7 +1,7 @@
 
 const initialState = {
         check: "",
-        success: []
+        success: ""
 };
 
 let password = "5555";
