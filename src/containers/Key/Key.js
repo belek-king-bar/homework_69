@@ -9,8 +9,8 @@ class Key extends Component {
       const {check, success, enterNumber, spliceNumber, enterCheck} = this.props;
       console.log(check);
       return (
-            <div className="Counter">
-                <Screen check={check.replace(/\d/g, "*")} success={success}/>
+            <div className="card Key mx-auto mt-3 bg-dark" style={{width: 250}}>
+                <Screen check={check.replace(/\d/g, "* ")} success={success}/>
                 <Buttons value={enterNumber} splice={spliceNumber} enter={enterCheck}/>
             </div>
         );
