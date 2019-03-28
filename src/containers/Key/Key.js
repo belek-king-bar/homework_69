@@ -7,9 +7,10 @@ import Buttons from '../../components/Buttons/Buttons'
 class Key extends Component {
   render() {
       const {check, success, enterNumber, spliceNumber, enterCheck} = this.props;
+      console.log(check);
       return (
             <div className="Counter">
-                <Screen check={check} success={success}/>
+                <Screen check={check.replace(/\d/g, "*")} success={success}/>
                 <Buttons value={enterNumber} splice={spliceNumber} enter={enterCheck}/>
             </div>
         );

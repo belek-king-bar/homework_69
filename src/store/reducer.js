@@ -1,10 +1,10 @@
 
 const initialState = {
-        check: [],
+        check: "",
         success: []
 };
 
-let password = "1234";
+let password = "5555";
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
